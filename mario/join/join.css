@@ -1,0 +1,95 @@
+body, ul, li, a, ol, h1, h2{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left:0px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+     z-index: 1;
+     /* to move the image front from the image  */
+}
+header h1{
+    border: 5px  solid white;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.banner img{
+    max-width: 100%;
+}
+.banner  h2 span{
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.banner h2{
+    font-size: 50px;
+}
+.welcome{
+    position: absolute;
+    left: 0;
+    top: 55%;
+    background-color: orange;
+    color: aliceblue;
+    font-size: 40px;
+}
+/* video{
+    padding: 20px 33%;
+}
+video:hover{
+    position: relative;
+    top: -5px;
+} */
+nav p{
+    text-align: center;
+    line-height: 40px;
+    padding:0 50px ;
+    margin: 40px 20px;
+}
+nav span{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+.guys{
+    font-size: 1.3em;
+}
+.join{
+    width: 400px;
+    padding:  0 33%;
+}
+form input{
+    margin: 20px 0;
+    padding: 20px ;
+    font-size: 20px;
+    border-radius: 40px;
+    border: 2px black solid;
+}
+footer{
+    background-color: red;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+
+}
+.joins{
+    background-color:rgb(218, 214, 209);
+    text-align: center;
+    padding: 60px 20px;;
+}
+.joins p{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section h2{
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

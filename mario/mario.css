@@ -1,0 +1,238 @@
+body,ul,li,ol,a,h1,h2{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* body{
+    background-image: url(picture/banner.png);
+} */
+header{
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left:0px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+     z-index: 1;
+     /* to move the image front from the image  */
+}
+header h1{
+    border: 5px  solid white;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.banner img{
+    max-width: 100%;
+}
+.banner h2{
+    font-size: 50px;
+}
+.banner  h2 span{
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.welcome{
+    position: absolute;
+    left: 0;
+    top: 55%;
+    background-color: orange;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+nav{
+    background-color: rgb(218, 214, 209);
+    padding: 25px ;
+    position: sticky;
+    top: 90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 100%;
+    margin: 0 100px;
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 30px;
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+ul .join{
+    color: lightcoral;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+main h2{
+    color: red;
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:oblique;
+
+}
+main p{
+    line-height: 30px;
+    text-align: center;
+}
+.images{
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img{
+    max-width: 100%;   
+}
+.joins{
+    background-color: rgb(218, 214, 209);
+    text-align: center;
+    padding: 60px 20px;;
+}
+.joins p{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section h2{
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+form input{
+    margin: 20px 0;
+    padding: 20px ;
+    font-size: 20px;
+    border-radius: 40px;
+    border: 2px black solid;
+}
+footer{
+    background-color: red;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+
+/* pseudo classes */
+
+nav li:hover{
+    text-decoration: underline ;
+    position: relative;
+    top: -5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px lightcoral;
+}
+nav .li1:hover{
+    text-decoration: underline lightcoral;
+    text-shadow: 2px 2px #000000;
+}
+
+.images .images2:hover{
+    position: relative;
+    top: -2px; 
+}
+ul .images1:hover{
+    position: relative;
+    top: -2px;
+}
+ form input:valid{
+    background-color: red;
+}
+.joins form input:focus{
+    border: 7px double rgb(0, 0, 0);
+}
+
+
+/* responsive image*/
+
+@media  screen and (max-width:900px) {
+    .welcome h2{
+        font-size: 20px;
+        background-color: orange;
+    }
+    .welcome h2 br{
+        display: none;
+    }
+    .banner h2 span{
+        font-size: 1em;
+    }
+    .banner .welcome  {
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }    
+    article h2{
+        font-size: 20px;
+    }
+    main p{
+        font-size: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 15px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    nav li{
+        font-size: 20px;
+        padding:  0 5px ;
+        margin: 0 5px;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+    nav li{
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+        padding-left: 50px;
+        border: 2px dotted black;
+        padding-right: 100px;
+        border-radius: 20px;
+    }
+    section h2{
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }.joins{
+        background-color: rgb(218, 214, 209);
+        text-align: center;
+        padding: 30px 10px;;
+    }
+    .joins p{
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    form input{
+        margin: 10px 0;
+        padding: 10px ;
+        font-size: 10px;
+        border-radius: 20px;
+        border: 2px black solid;
+    }
+    header{
+        
+        font-size: 10px;
+        /* position: relative; */
+    }
+  
+    
+}
+
